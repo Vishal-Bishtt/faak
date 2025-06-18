@@ -1,0 +1,474 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- HEADER LAYOUT FINAL MATCH --- */
+.header-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    background: #fff;
+    padding: 0 32px 0 32px;
+    min-height: 90px;
+}
+.header-left {
+    display: flex;
+    align-items: flex-start;
+    min-width: 370px;
+    gap: 12px;
+    margin-top: 8px;
+}
+.govt-logo-img {
+    height: 64px;
+    width: 64px;
+    object-fit: contain;
+    margin-top: 0;
+}
+.govt-header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 8px;
+    margin-top: 2px;
+}
+.govt-main {
+    font-size: 1.32em;
+    font-weight: 700;
+    color: #222;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.govt-sub {
+    font-size: 1.13em;
+    color: #222;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.govt-sub2 {
+    font-size: 1.02em;
+    color: #222;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header-center {
+    flex: 1;
+    text-align: center;
+    margin-top: 18px;
+}
+.exam-title {
+    font-size: 1.55em;
+    font-weight: 500;
+    color: #222;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.exam-subtitle {
+    font-size: 1.25em;
+    color: #222;
+    margin-top: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    min-width: 370px;
+    margin-top: 6px;
+}
+.nta-nmc-blocks {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0;
+    width: 340px;
+}
+.nta-block, .nmc-block {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-height: 54px;
+    width: 100%;
+}
+.nta-logo-img, .nmc-logo-img {
+    height: 54px;
+    width: 54px;
+    object-fit: contain;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 2px #ccc;
+}
+.nta-texts, .nmc-texts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.1;
+    margin-left: 8px;
+}
+.nta-hindi, .nmc-hindi {
+    font-size: 1.08em;
+    color: #1a237e;
+    font-weight: 600;
+    font-family: 'Noto Sans Devanagari', Arial, sans-serif;
+}
+.nta-eng, .nmc-eng {
+    font-size: 1.08em;
+    color: #1a237e;
+    font-weight: 600;
+    font-family: Arial, sans-serif;
+}
+.nta-tag {
+    font-size: 0.95em;
+    color: #008000;
+    font-weight: 600;
+    font-family: Arial, sans-serif;
+    margin-top: 2px;
+}
+.nta-nmc-divider {
+    border: none;
+    border-top: 1.5px solid #bdbdbd;
+    width: 100%;
+    margin: 2px 0 2px 0;
+}
+.header-bluebar {
+    width: 100vw;
+    height: 24px;
+    background: #002147;
+    margin: 0 -10px 0 -10px;
+}
+/* --- END HEADER LAYOUT FINAL MATCH --- */
+
+/* Header Section */
+.header {
+    background: #ffffff;
+    padding: 20px 0;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    gap: 20px;
+}
+
+.left-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.govt-logo {
+    width: 60px;
+    height: 60px;
+    background: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMzAiIGN5PSIzMCIgcj0iMjgiIGZpbGw9IiMwMDY2Q0MiLz4KPHN2ZyB4PSI1IiB5PSI1IiB3aWR0aD0iNTAiIGhlaWdodD0iNTAiPgogIDxyZWN0IHg9IjEwIiB5PSIxMCIgd2lkdGg9IjMwIiBoZWlnaHQ9IjMwIiBmaWxsPSJ3aGl0ZSIvPgogIDx0ZXh0IHg9IjI1IiB5PSMzMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzAwNjZDQyIgZm9udC1zaXplPSIxNiIgZm9udC13ZWlnaHQ9ImJvbGQiPkc8L3RleHQ+CiAgPC9zdmc+Cjwvc3ZnPg==') no-repeat center;
+    background-size: contain;
+    border-radius: 50%;
+    background-color: #0066cc;
+}
+
+.dept-info h1 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 2px;
+}
+
+.dept-info h2 {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 2px;
+}
+
+.dept-info h3 {
+    font-size: 14px;
+    color: #888;
+}
+
+.center-section {
+    text-align: center;
+    flex: 1;
+    margin: 0 20px;
+}
+
+.center-section h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.center-section h2 {
+    font-size: 18px;
+    color: #666;
+}
+
+.right-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.nta-logo, .nmc-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #ff6b35, #f7941d);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.nmc-logo .logo-img {
+    background: linear-gradient(135deg, #4285f4, #0066cc);
+}
+
+.logo-text {
+    text-align: right;
+}
+
+.logo-text h3 {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 2px;
+}
+
+.logo-text h4 {
+    font-size: 12px;
+    color: #666;
+}
+
+/* --- FORM LAYOUT AND BUTTONS FINAL MATCH --- */
+.form-container {
+    background: #fff;
+    border: 1px solid #d3d3d3;
+    border-radius: 2px;
+    max-width: 700px;
+    margin: 60px auto 0 auto;
+    overflow: hidden;
+    box-shadow: none;
+}
+.form-header {
+    background-color: #002147;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: 500;
+    gap: 10px;
+}
+.form-header::before {
+    content: '\1F512';
+    font-size: 1.1em;
+    margin-right: 8px;
+}
+.form-body {
+    padding: 30px 40px 30px 40px;
+}
+.form-group {
+    margin-bottom: 22px;
+    display: flex;
+    align-items: center;
+}
+.form-group label {
+    width: 220px;
+    text-align: right;
+    margin-right: 15px;
+    color: #222;
+    font-size: 1.1em;
+}
+.form-group input[type="text"],
+.form-group input[type="password"] {
+    flex: 1;
+    max-width: 400px;
+    padding: 8px 10px;
+    border: 1px solid #bdbdbd;
+    border-radius: 2px;
+    font-size: 1.1em;
+    background: #fff;
+    color: #222;
+}
+.case-sensitive {
+    color: #008000;
+    margin-left: 5px;
+    font-weight: 600;
+}
+.captcha-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.captcha-display {
+    background-color: #002147;
+    color: #fff;
+    padding: 4px 16px;
+    font-family: monospace;
+    font-size: 1.25em;
+    letter-spacing: 2px;
+    border-radius: 2px;
+    margin-right: 6px;
+    border: 1px solid #222147;
+}
+.refresh-btn {
+    background: none;
+    border: none;
+    color: #27ae60;
+    font-size: 1.7em;
+    cursor: pointer;
+    padding: 0 5px;
+    margin-left: 2px;
+    vertical-align: middle;
+    transition: transform 0.1s;
+}
+.refresh-btn:active {
+    transform: rotate(90deg);
+}
+.form-actions {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-left: 235px;
+    margin-top: 10px;
+}
+.login-btn {
+    background-color: #008000;
+    color: white;
+    border: none;
+    padding: 8px 32px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: background 0.2s;
+}
+.login-btn:hover {
+    background-color: #006400;
+}
+.forgot-password {
+    color: #000080;
+    text-decoration: underline;
+    font-size: 1.05em;
+    margin-left: 10px;
+}
+.forgot-password:hover {
+    color: #002147;
+}
+.error-message {
+    color: #ff0000;
+    font-size: 0.95em;
+    margin-top: 5px;
+    display: none;
+}
+.success-message {
+    color: #008000;
+    text-align: center;
+    padding: 10px;
+    display: none;
+}
+footer {
+    text-align: center;
+    padding: 13px 0 13px 0;
+    background-color: #002147;
+    color: white;
+    font-size: 1.05em;
+    margin-top: auto;
+    letter-spacing: 0.01em;
+}
+/* --- END FORM LAYOUT AND BUTTONS FINAL MATCH --- */
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-content {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .left-section, .right-section {
+        justify-content: center;
+    }
+
+    .center-section {
+        margin: 0;
+    }
+
+    .center-section h1 {
+        font-size: 20px;
+    }
+
+    .center-section h2 {
+        font-size: 16px;
+    }
+
+    .form-body {
+        padding: 20px;
+    }
+
+    .captcha-group {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .captcha-input {
+        max-width: 100%;
+    }
+
+    .form-actions {
+        flex-direction: column;
+        gap: 15px;
+        align-items: stretch;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-content {
+        padding: 0 10px;
+    }
+
+    .dept-info h1 {
+        font-size: 16px;
+    }
+
+    .dept-info h2 {
+        font-size: 14px;
+    }
+
+    .center-section h1 {
+        font-size: 18px;
+    }
+
+    .form-body {
+        padding: 15px;
+    }
+
+    .logo-img {
+        width: 40px;
+        height: 40px;
+        font-size: 14px;
+    }
+}
